@@ -1,5 +1,5 @@
-#Pablo Perez
-#1770045
+# Pablo Perez
+# 1770045
 def exact_change(total):
 
     num_dollars = total // 100
