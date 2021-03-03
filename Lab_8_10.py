@@ -1,5 +1,5 @@
-#Pablo Perez
-#1770045
+# Pablo Perez
+# 1770045
 word = input()
 backwards = ""
 
