@@ -1,5 +1,5 @@
-#Pablo Perez
-#1770045
+# Pablo Perez 
+# 1770045
 password = input()
 password = password.replace('i', '!')
 password = password.replace('a', '@')
