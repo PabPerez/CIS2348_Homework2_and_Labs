@@ -44,7 +44,7 @@ for line in file1:
             #if int(testDay) < currentDay:
                 #file2.write(testDate + "\n")
 
-###FIGURE OUT WHY TF IT'S NOT OUTPUTTING ANY CODE !!!
+###FIGURE OUT WHY IT'S NOT OUTPUTTING ANY CODE !!!
 
 file2.close()
 file1.close()
