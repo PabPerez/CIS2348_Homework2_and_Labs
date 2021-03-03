@@ -29,21 +29,17 @@ for line in file1:
                     currentMonth = months[month.lower()]
                     testDate = currentMonth + "/" + day + "/" + year
 
-    testList = testDate.split("/")
-    testMonth = testList[0]
-    testDay = testList[1]
-    testYear = testList[2]
+                    testList = testDate.split("/")
+                    testMonth = testList[0]
+                    testDay = testList[1]
+                    testYear = testList[2]
 
-    if int(testYear) <= currentYear:
-        if int(testYear) == currentYear:
-            if val_list.index(testMonth) + 1 <= int(currentMonth):
-                if val_list.index(testMonth) + 1 == int(currentMonth):
-                    if int(testDay) <= currentDay:
+                    if int(testYear) < currentYear:
                         file2.write(testDate + "\n")
-        #if val_list.index(testMonth) + 1 <= int(currentMonth):
-            #if int(testDay) < currentDay:
-                #file2.write(testDate + "\n")
-
+                        if int(testYear) == currentYear and val_list.index(testMonth) + 1 < int(currentMonth):
+                            file2.write(testDate + "\n")
+                            if int(testYear) == currentYear and val_list.index(testMonth) + 1 == int(currentMonth) and int(testDay) < currentDay:
+                                file2.write(testDate + "\n")
 
 file2.close()
 file1.close()
